@@ -11,15 +11,18 @@ from flask import Flask, render_template
 #Flask app variable
 app = Flask(__name__)
 
-#static route
+#static routes
 @app.route("/")
-def hello():
+def index():
     return render_template("index.html")
 
-#static route
-@app.route("/1006")
-def hellopart2():
-    return render_template("homepage.html")
+@app.route("/page1")
+def page1():
+    return render_template("page1.html")
+
+@app.route("/page2")
+def page2():
+    return render_template("page2.html")
 
 #start the server
 if __name__ == "__main__":
