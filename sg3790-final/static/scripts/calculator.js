@@ -1,3 +1,7 @@
+// sg3790 Sadi Gulcelik python final
+
+// the evaluate algorithm was inspired by (and very loosely base on) one of Professor Bauer's Data Structures lectures from last semester
+
 function compute() {
     var input = document.getElementById("equationInput").value;
     document.getElementById("equationOutput").innerHTML = evaluate(input);
@@ -112,6 +116,7 @@ function graph() {
     for (var i = 0; i < canvas.width; i++) {
         x = (i / 20.0) - canvas.width / 40;
         y = f(input, x);
+
         grid.lineTo(i, 20 * (10 - y));
         grid.moveTo(i, 20 * (10 - y));
     }

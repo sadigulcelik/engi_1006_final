@@ -1,27 +1,36 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <!--specifies title of the page !-->
-        <title>Sadi Gulcelik Personal Homepage</title>
-        <link rel="stylesheet" href="/static/styles/style.css">
-        <script language="javascript" type="text/javascript" src="/static/styles/work.js"></script>
-    <head>
-    <body>
-<ul>
-    <li><a href="{{url_for('index')}}">Home</a></li>
-    <li class="hanging">
-    <a href="javascript:void(0)" class="hangcue">Pages</a>
-    <div class="hanging-content">
-        <a href="{{url_for('page1')}}">Page 1</a>
-        <a href="{{url_for('page2')}}">Page 2</a>
-    </div>
-  </li>
-</ul>
-        <p>Name: Sadi Gulcelik<p>
-        <img src="/static/images/sadiphoto.jpeg" width=200>
-        <p>Grade: freshman<p>
-        <p>Intended major: applied physics</p>
-    
-    </body>
-</html>
+<!–– sg3790 Sadi Gulcelik python final––>
+    <!DOCTYPE html>
+    <html>
 
+    <head>
+        <title>Sadi Gulcelik Home Page</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='styles/style.css')}}">
+        <script language="javascript" type="text/javascript" src="{{url_for('static',filename='scripts/calculator.js')}}"></script>
+    </head>
+
+    <body>
+        <ul>
+            <li><a href="{{url_for('index')}}">Home</a></li>
+            <li class="hanging">
+                <a href="javascript:void(0)" class="hangcue">Tools</a>
+                <div class="hanging-content">
+                    <a href="{{url_for('calculator')}}">Calculator</a>
+                    <a href="{{url_for('grapher')}}">Grapher</a>
+                </div>
+            </li>
+        </ul>
+        <div class="main">
+            <br>
+            <h2>Name: Sadi Gulcelik</h2>
+            <br>
+            <div class="center">
+                <img src="/static/images/sadiphoto.jpeg" width=500>
+            </div>
+            <br>
+            <h2>Grade: freshman</h2>
+            <br>
+            <h2>Intended major: applied physics</h2>
+        </div>
+    </body>
+
+    </html>

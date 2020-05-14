@@ -1,28 +1,49 @@
-body{
+.text {
+    font-size: 25px;
+    color: #000080;
+}
+
+.center {
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+body {
     background-color: whitesmoke;
     margin: 0;
     padding: 0;
 }
-p{
-    margin:20;
+
+p {
+    margin: 20;
 }
-h1{
-    text-align:center;
-    color:#000080;
-    margin:0;
-    font-size:40px;
+
+h1 {
+    text-align: center;
+    color: #000080;
+    margin: 0;
+    font-size: 40px;
 }
-h2{
-    text-align:center;
-    color:#000080;
-    margin:0;
-    font-size:25px;
+
+h2 {
+    text-align: center;
+    color: #000080;
+    margin: 0;
+    font-size: 25px;
 }
-h3{
-    color:#000060;
-    margin:0;
-    font-size:25px;
+
+h3 {
+    color: #000060;
+    margin: 0;
+    font-size: 25px;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -34,30 +55,21 @@ ul {
 
 li {
     float: left;
-    width:150px;
-    color:#585656;
+    width: 150px;
+    color: #585656;
 }
-li:hover{
-   background-color:#e0f2ff;
-       color:black;
+
+li:hover {
+    background-color: #e0f2ff;
+    color: black;
 }
-a{
-    color:inherit;
+
+a {
+    color: inherit;
 }
-.text{
-    font-size:25px;
-    color:#000080;
-}
-#center{
-    margin-left:30px;
-    margin-right:30px;
-    text-align:center;
-}
-#main{
-    margin-left:20px;
-    margin-right:20px;
-}
-li a, .hangcue {
+
+li a,
+.hangcue {
     display: inline-block;
     text-align: center;
     padding: 14px 16px;
@@ -65,8 +77,8 @@ li a, .hangcue {
 }
 
 .hanging-content a:hover {
-    color:black;
-    background-color:#e2e2ff;
+    color: black;
+    background-color: #e2e2ff;
 }
 
 li.hanging {
@@ -89,6 +101,7 @@ li.hanging {
     display: block;
     text-align: left;
 }
+
 .hanging:hover .hanging-content {
     display: block;
 }

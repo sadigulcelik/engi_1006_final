@@ -1,0 +1,43 @@
+<!–– sg3790 Sadi Gulcelik python final––>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>sg3790: Calculator</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='styles/style.css')}}">
+        <script language="javascript" type="text/javascript" src="{{url_for('static',filename='scripts/calculator.js')}}"></script>
+    </head>
+
+    <body>
+        <ul>
+            <li><a href="{{url_for('index')}}">Home</a></li>
+            <li class="hanging">
+                <a href="javascript:void(0)" class="hangcue">Tools</a>
+                <div class="hanging-content">
+                    <a href="{{url_for('calculator')}}">Calculator</a>
+                    <a href="{{url_for('grapher')}}">Grapher</a>
+                </div>
+            </li>
+        </ul>
+
+
+        <div class="main">
+            <h2>Expression Evaluator</h2>
+            <h3> Insert an expression to be computed:</h3>
+            <br>
+            <div class="center">
+                <input onkeydown="compute()" onkeyup="compute()" id="equationInput" placeholder="insert expression" class="text">
+            </div>
+            <br>
+            <h3> Result:</h3>
+            <div class="center">
+                <p id="equationOutput" class="text"></p>
+            </div>
+            <h2>Try something like '3^1.5+(4!-31)*2</h2>
+            <h2>Note that the calculator currently does not understand '-5' but will understand '(0-5)'</h2>
+            <p>A stack based evaluator mechanism that currently supports addition, subtraction, multiplication, division, exponentials (I use the carrot convention) and factorials. Once the algorithm has been written out it is easier to add new function and customize it to support more operations one might use (such adding support for integration and differentiation).</p>
+        </div>
+
+    </body>
+
+    </html>

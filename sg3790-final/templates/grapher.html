@@ -1,0 +1,39 @@
+<!–– sg3790 Sadi Gulcelik python final––>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>sg3790: Grapher</title>
+        <link rel="stylesheet" href="static/styles/style.css">
+        <script language="javascript" type="text/javascript" src="static/scripts/calculator.js"></script>
+    </head>
+
+    <body>
+        <ul>
+            <li><a href="{{url_for('index')}}">Home</a></li>
+            <li class="hanging">
+                <a href="javascript:void(0)" class="hangcue">Tools</a>
+                <div class="hanging-content">
+                    <a href="{{url_for('calculator')}}">Calculator</a>
+                    <a href="{{url_for('grapher')}}">Grapher</a>
+                </div>
+            </li>
+        </ul>
+        <div class="main">
+            <h2>Grapher</h2>
+            <h3> Insert an expression to be graphed</h3>
+            <br>
+            <div class="center">
+                <p style="font-size: 30px">y=<input onkeydown="graph()" onkeyup="graph()" id="equationInput" placeholder="please enter an equation" class="text"></p>
+                <br>
+                <br>
+                <canvas id="graph" width="400" height="400">
+                </canvas>
+            </div>
+            <h2>Try something like 'x^2+x^1.2-3/x'</h2>
+            <h2>The grapher does not currently support something of the form -x^2, so instead just type '0-x^2'</h2>
+            <p>I had initially struggled to find a way to get the user to input code that I would use to graph. Then, I realized that I already had a tool to do exactly what I wanted. I use the stack based algorithm (and nothing else) to evaluate any polynomial of x including some fractional powers and even (very roughly) factorials. Effectively, the code works by going through every x value, replacing the character 'x' with the value of x at that point, and computing the y value using my stack based evaluator. </p>
+        </div>
+    </body>
+
+    </html>

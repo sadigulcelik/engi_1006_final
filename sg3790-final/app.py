@@ -16,13 +16,13 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/page1")
-def page1():
-    return render_template("page1.html")
+@app.route("/calculator")
+def calculator():
+    return render_template("calculator.html")
 
-@app.route("/page2")
-def page2():
-    return render_template("page2.html")
+@app.route("/grapher")
+def grapher():
+    return render_template("grapher.html")
 
 #start the server
 if __name__ == "__main__":
