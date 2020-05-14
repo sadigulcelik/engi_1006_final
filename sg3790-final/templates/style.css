@@ -10,13 +10,18 @@ h1{
     text-align:center;
     color:#000080;
     margin:0;
-    font-size:40;
+    font-size:40px;
 }
 h2{
     text-align:center;
     color:#000080;
     margin:0;
-    font-size:25;
+    font-size:25px;
+}
+h3{
+    color:#000060;
+    margin:0;
+    font-size:25px;
 }
 ul {
     list-style-type: none;
@@ -24,13 +29,13 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #d3ebff;
-    
+
 }
 
 li {
     float: left;
     width:150px;
-    color:#585656;  
+    color:#585656;
 }
 li:hover{
    background-color:#e0f2ff;
@@ -38,6 +43,19 @@ li:hover{
 }
 a{
     color:inherit;
+}
+.text{
+    font-size:25px;
+    color:#000080;
+}
+#center{
+    margin-left:30px;
+    margin-right:30px;
+    text-align:center;
+}
+#main{
+    margin-left:20px;
+    margin-right:20px;
 }
 li a, .hangcue {
     display: inline-block;
@@ -53,7 +71,7 @@ li a, .hangcue {
 
 li.hanging {
     display: inline-block;
-    
+
 }
 
 .hanging-content {

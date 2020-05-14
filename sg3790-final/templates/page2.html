@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!--specifies title of the page !-->
-        <title>Sadi Gulcelik Personal Homepage</title>
-        <link rel="stylesheet" href="/static/styles/style.css">
-        <script language="javascript" type="text/javascript" src="/static/styles/work.js"></script>
-    <head>
-    <body>
-<ul>
-    <li><a href="{{url_for('index')}}">Home</a></li>
-    <li class="hanging">
-    <a href="javascript:void(0)" class="hangcue">Pages</a>
-    <div class="hanging-content">
-        <a href="{{url_for('page1')}}">Page 1</a>
-        <a href="{{url_for('page2')}}">Page 2</a>
-    </div>
-  </li>
-</ul>
-    <body>
-        <p>I am a second fun page<p>
-    </body>
-</html>
 
+<head>
+    <!--specifies title of the page !-->
+    <title>Grapher</title>
+    <link rel="stylesheet" href="style.css">
+    <script language="javascript" type="text/javascript" src="calculator.js"></script>
+
+</head>
+
+<body>
+    <ul>
+        <li><a href="{{url_for('index')}}">Home</a></li>
+        <li class="hanging">
+            <a href="javascript:void(0)" class="hangcue">Pages</a>
+            <div class="hanging-content">
+                <a href="{{url_for('page1')}}">Page 1</a>
+                <a href="{{url_for('page2')}}">Page 2</a>
+            </div>
+        </li>
+    </ul>
+    <div id="main">
+        <h2>Expression Evaluator</h2>
+        <h3> Insert an expression to be computed:</h3>
+        <br>
+        <div id="center">
+            <p>y=<input onkeydown="graph()" onkeyup="graph()" id="equationInput" placeholder="please enter an equation" class="text"></p>
+            <br>
+            <br>
+            <canvas id="graph" width="400" height="400">
+            </canvas>
+        </div>
+
+    </div>
+</body>
+
+</html>
